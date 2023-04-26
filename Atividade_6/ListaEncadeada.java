@@ -2,7 +2,6 @@ public class ListaEncadeada implements IListaEncadeada{
     
     private No inicio;
     private No ultimo;
-    private int tamanho;
 
     
     public ListaEncadeada(){
@@ -11,7 +10,7 @@ public class ListaEncadeada implements IListaEncadeada{
     }
 
     @Override
-    public void addInicio(int element){
+    public void addInicio(Object element){
         No celula = new No(element);
         if(inicio == null){
             inicio = celula;
@@ -24,7 +23,7 @@ public class ListaEncadeada implements IListaEncadeada{
     }
 
     @Override
-    public void addFinal(int element){
+    public void addFinal(Object element){
         No celula = new No(element);
         if(ultimo == null){
             inicio = celula;
@@ -38,7 +37,7 @@ public class ListaEncadeada implements IListaEncadeada{
     }
 
     @Override
-    public boolean remove(int element) {
+    public boolean remove(Object element) {
         No p = consultarElement(element);
 
         if (p == null) {
@@ -64,10 +63,10 @@ public class ListaEncadeada implements IListaEncadeada{
         return true;
     }
 
-    public No consultarElement(int element) {
+    public No consultarElement(Object element) {
         No p = inicio;
 
-        while (p != null && p.getElement().equals(element)) {
+        while (p != null && !p.getElement().equals(element)) {
             p = p.getProximo();
         }
 

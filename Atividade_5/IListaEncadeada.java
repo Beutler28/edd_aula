@@ -1,3 +1,5 @@
+
+
 public interface IListaEncadeada {
 
     public void addInicio(int element);

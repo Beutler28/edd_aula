@@ -1,16 +1,13 @@
 public class No {
     private Object element; 
     private No proximo;
+    private No anterior;
 
     
     public No(Object element) {
         this.element = element;
         this.proximo = null;
-    }
-
-    public No(Object element, No proximo) {
-        this.element = element;
-        this.proximo = proximo;
+        this.anterior = null;
     }
 
     public Object getElement() {
@@ -26,11 +23,21 @@ public class No {
         this.proximo = proximo;
     }
 
+    public No getAnterior() {
+        return anterior;
+    }
+
+    public void setAnterior(No anterior) {
+        this.anterior = anterior;
+    }
+
+
     @Override
     public String toString() {
         return "No [element=" + element + ", proximo=" + proximo + "]";
     }
 
+   
     
     
 }
