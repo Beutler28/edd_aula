@@ -1,3 +1,4 @@
+
 public class ListaEncadeada implements IListaEncadeada{
     
     private No inicio;
@@ -11,6 +12,7 @@ public class ListaEncadeada implements IListaEncadeada{
 
     @Override
     public void addInicio(Object element){
+
         No celula = new No(element);
         if(inicio == null){
             inicio = celula;
@@ -93,12 +95,6 @@ public class ListaEncadeada implements IListaEncadeada{
         }
 
         return lista;
-    }
-    
-    public int getTamanho(){
-        return this.tamanho;
-    }
-
-    
+    }    
     
 }

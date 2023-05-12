@@ -64,6 +64,7 @@ public class ListaEncadeada implements IListaEncadeada{
         return true;
     }
 
+    @Override
     public No consultarElement(int element) {
         No p = inicio;
 
