@@ -1,4 +1,4 @@
-public class ListaEncadeada implements IListaEncadeada{
+public class ListaEncadeada{
     
     private No inicio;
     private No ultimo;
