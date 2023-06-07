@@ -29,15 +29,14 @@ public class No {
     public void setProximo(No proximo) {
         this.proximo = proximo;
     }
+  
 
     @Override
     public String toString() {
         return "No [element=" + element + ", proximo=" + proximo + "]";
     }
 
-    public Object getInfo() {
-        return null;
-    }
+    
 
     
     

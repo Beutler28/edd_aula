@@ -49,7 +49,7 @@ public class ListaEncadeada implements IListaEncadeada {
         No anterior = null;
         No atual = inicio;
 
-        while (atual != null && !atual.getInfo().equals(element)) {
+        while (atual != null && !atual.getElement().equals(element)) {
             anterior = atual;
             atual = atual.getProximo();
         }
@@ -95,7 +95,7 @@ public class ListaEncadeada implements IListaEncadeada {
         String lista = "";
 
         for (No i = inicio; i != null; i = i.getProximo()) {
-            lista += i.getInfo() + " ";
+            lista += i.getElement() + " ";
         }
 
         return lista;
