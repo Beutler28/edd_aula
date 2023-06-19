@@ -1,0 +1,1 @@
+Nesse algoritmo, o termo de maior ordem é 5n log⁡n.Portanto, podemos dizer que o algoritmo D tem complexidade logarítmica, representada por O(n log⁡n).

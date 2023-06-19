@@ -1,0 +1,30 @@
+Bubble Sort:
+Passo 1: [3, 7, 1, 4, 9, 2]
+Passo 2: [3, 1, 7, 4, 9, 2] (troca: 7 e 1)
+Passo 3: [3, 1, 4, 7, 9, 2] (troca: 7 e 4)
+Passo 4: [3, 1, 4, 7, 2, 9] (troca: 9 e 2)
+Passo 5: [1, 3, 4, 7, 2, 9] (troca: 3 e 1)
+Passo 6: [1, 3, 4, 2, 7, 9] (troca: 7 e 2)
+Passo 7: [1, 3, 2, 4, 7, 9] (troca: 4 e 2)
+Passo 8: [1, 2, 3, 4, 7, 9] (troca: 3 e 2)
+
+Vetor ordenado: [1, 2, 3, 4, 7, 9]
+
+Selection Sort:
+Passo 1: [3, 7, 1, 4, 9, 2] (menor elemento: 1)
+Passo 2: [1, 7, 3, 4, 9, 2] (menor elemento: 2)
+Passo 3: [1, 2, 3, 4, 9, 7] (menor elemento: 3)
+Passo 4: [1, 2, 3, 4, 9, 7] (menor elemento: 4)
+Passo 5: [1, 2, 3, 4, 7, 9] (menor elemento: 7)
+
+Vetor ordenado: [1, 2, 3, 4, 7, 9]
+
+Insertion Sort:
+Passo 1: [3, 7, 1, 4, 9, 2]
+Passo 2: [3, 7, 1, 4, 9, 2]
+Passo 3: [1, 3, 7, 4, 9, 2] (inserindo 1 na posição correta)
+Passo 4: [1, 3, 4, 7, 9, 2] (inserindo 4 na posição correta)
+Passo 5: [1, 3, 4, 7, 9, 2]
+Passo 6: [1, 2, 3, 4, 7, 9] (inserindo 2 na posição correta)
+
+Vetor ordenado: [1, 2, 3, 4, 7, 9]
