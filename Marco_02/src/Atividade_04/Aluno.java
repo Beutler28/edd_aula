@@ -2,12 +2,12 @@ package Atividade_04;
 
 public class Aluno {
     private String nome;
-    private int id;
+    private int matricula;
     private double nota;
 
-    public Aluno(int id, String nome, float nota) {
+    public Aluno(int matricula, String nome, double nota) {
         this.nome = nome;
-        this.id = id;
+        this.matricula = matricula;
         this.nota = nota;
     }
 
@@ -19,12 +19,12 @@ public class Aluno {
         this.nome = nome;
     }
 
-    public int getid() {
-        return id;
+    public int getMatricula() {
+        return matricula;
     }
 
-    public void setid(int id) {
-        this.id = id;
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
     }
 
     public double getNota() {
@@ -38,7 +38,7 @@ public class Aluno {
     @Override
     public String toString() {
         return "Nome: " + nome +
-                ", id: " + id +
+                ", matricula: " + matricula +
                 ", Nota: " + nota;
     }
 

@@ -1,21 +1,21 @@
 package Atividade_04;
 
 public class No {
-    private Object element; 
+    private Aluno element; 
     private No proximo;
     private No anterior;
 
     
-    public No(Object element) {
+    public No(Aluno element) {
         this.element = element;
         this.proximo = null;
         this.anterior = null;
     }
 
-    public Object getElement() {
+    public Aluno getElement() {
         return element;
     }
-    public void setElement(Object element) {
+    public void setElement(Aluno element) {
         this.element = element;
     }
     public No getProximo() {

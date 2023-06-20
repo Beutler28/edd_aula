@@ -1,54 +1,72 @@
 package Atividade_04;
-public class ListaEncadeada implements IListaEncadeada{
-    
+
+public class ListaEncadeada implements IListaEncadeada {
+
     private No inicio;
-    private No ultimo;
     private int tamanho;
 
-    
-    public No inicio(){
+    public No getInicio() {
         return this.inicio;
     }
 
     @Override
-    public void addInicio(Aluno element){
+    public void setInicio(No inicio) {
+        this.inicio = inicio;
+    }
+
+    @Override
+    public void addInicio(Aluno element) {
         No celula = new No(element);
-        if(this.tamanho == 0){
+        if (this.tamanho == 0) {
             this.inicio = celula;
         } else {
             celula.setProximo(inicio);
             inicio = celula;
-        } 
+        }
         this.tamanho++;
-        
     }
 
     @Override
-    public void addFinal(Aluno element){
+    public void addFinal(Aluno element) {
         No celula = new No(element);
-        if(this.tamanho == 0){
+        if (this.tamanho == 0) {
             this.inicio = celula;
-        } else{
-            this.ultimo.setProximo(celula); 
+        } else {
+            No atual = inicio;
+            while (atual.getProximo() != null) {
+                atual = atual.getProximo();
+            }
+            atual.setProximo(celula);
         }
-        this.ultimo = celula;
         this.tamanho++;
     }
 
     @Override
     public void imprimirLista() {
         No atual = inicio;
-            while (atual != null) {
+        while (atual != null) {
             System.out.println(atual.getElement());
             atual = atual.getProximo();
+        }
     }
-}
 
     @Override
-    public int getTamanho(){
+    public int getTamanho() {
         return this.tamanho;
     }
 
-    
-    
+    @Override
+    public Aluno get(int index) {
+        if (index < 0 || index >= tamanho) {
+            throw new IndexOutOfBoundsException("Índice inválido");
+        }
+
+        No atual = inicio;
+        for (int i = 0; i < index; i++) {
+            atual = atual.getProximo();
+        }
+
+        return atual.getElement();
+    }
+
 }
